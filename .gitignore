@@ -1,3 +1,15 @@
+# latex auxiliary files
+paper/main.aux
+paper/main.blg
+paper/main.bbl
+paper/main.fls
+paper/main.fdb_latexmk
+paper/main.synctex.gz
+
+# Public datsets
+ModelNet40/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -205,3 +217,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
