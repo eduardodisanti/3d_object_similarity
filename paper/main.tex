@@ -33,7 +33,7 @@
     showstringspaces=false,
 }
 
-\title{Fast 3D Object Recognition using Surface Normal Distributions}
+\title{Leveraging Surface Normal Distributions for Fast 3D Object Recognition: A Point Cloud-Based Approach}
 
 \author{
   Eduardo Di Santi
@@ -148,12 +148,13 @@ The pseudocode for this estimation is as follows:
     \State $diff \gets normals[i] - mean$
     \State $covariance\_matrix \gets covariance\_matrix + (diff \cdot diff^T)$
   \EndFor
-  \State $covariance\_matrix \gets covariance\_matrix / n$
+  \State $covariance\_matrix \gets covariance\_matrix / (n - 1)$
   \State \Return $mean, covariance\_matrix$
 \EndFunction
 \end{algorithmic}
 \caption{Code to describe a surface normal as a multivariate normal distribution}
 \end{algorithm}
+
 
 
 \subsection{Similarity Metrics}
